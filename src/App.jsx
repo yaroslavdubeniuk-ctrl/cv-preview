@@ -4,11 +4,6 @@ import viteLogo from '/vite.svg'
 import { Document, Page, pdfjs } from 'react-pdf'
 import './App.css'
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.mjs',
-  import.meta.url
-).toString()
-
 function App() {
   const [scale, setScale] = useState(1)
 
